@@ -20,7 +20,7 @@ export class Post extends Model {
   @Column(DataType.STRING)
   name!: string;
 
-  @BelongsTo(() => User)
+  @BelongsTo(() => User, "createdBy")
   created!: User;
 
   @PrimaryKey
