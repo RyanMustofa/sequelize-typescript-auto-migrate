@@ -10,11 +10,7 @@ class UserController {
         },
       ],
     });
-    return res.status(200).send({
-      status: true,
-      message: "api",
-      data: user,
-    });
+    return res.sendData(200, "Data User", user);
   }
 }
 
