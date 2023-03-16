@@ -25,6 +25,7 @@ const fs = require("fs").promises;
       async (err, stdout, stderr) => {
         if (err) {
           console.error(stderr);
+          return;
         }
         console.log(
           "==================== Migration Force ===================="
